@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello React!</title>
+        <!-- Dependencies -->
+        <script src="./node_modules/react/umd/react.development.js"></script>
+        <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="example"></div>
+        <!-- Main -->
+        <script>
+          const sc = document.createElement('script');
+          sc.src = './dist/main.js?t='+(new Date().getTime());
+          document.body.appendChild(sc);
+        </script>
+    </body>
+</html>
