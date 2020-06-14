@@ -1,5 +1,6 @@
 import * as React from "react";
 import { execSync } from "child_process";
+import "../style.scss";
 
 export interface HelloProps { compiler: string; framework: string; }
 
