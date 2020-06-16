@@ -7,7 +7,7 @@
     "react": "webpack --watch --progress",
     "electron": "tsc -p electron && electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "webpack --progress && tsc -p electron && electron-packager . --overwrite --platform=win32"
+    "pack": "webpack --progress && tsc -p electron && electron-packager . --overwrite --platform=win32"
   },
   "keywords": [],
   "author": "",
