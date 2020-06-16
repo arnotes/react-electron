@@ -1,3 +1,5 @@
 node_modules/
 dist/
 dist-electron/
+
+react-electron-win32-x64

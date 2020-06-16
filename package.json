@@ -2,11 +2,12 @@
   "name": "react-electron",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist-electron/main.js",
   "scripts": {
     "react": "webpack --watch --progress",
-    "electron": "tsc -p electron && electron dist-electron/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "electron": "tsc -p electron && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "webpack --progress && tsc -p electron && electron-packager . --overwrite --platform=win32"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "@types/react-dom": "^16.9.8",
     "css-loader": "^3.6.0",
     "electron": "^9.0.4",
+    "electron-packager": "^14.2.1",
     "sass": "^1.26.8",
     "sass-loader": "^8.0.2",
     "source-map-loader": "^1.0.0",
