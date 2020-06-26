@@ -10,7 +10,7 @@ export const Hello = (props: HelloProps) => {
     console.log(r.toString());//
   }
   return <h1>
-    Hello from {props.compiler} and {props.framework}!
+    Hello World from {props.compiler} and {props.framework}!
     <button onClick={onClick}>test</button>
   </h1>;
 }
